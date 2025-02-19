@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Stash</title>
+</head>
+
+<body>
+    Before commit need to fetch or change branch in this i will not commit my existing uncomplete work i add my work to stash or temperory area;
+
+    <!-- command  -->
+    git Stash; chnages will go to the stash
+
+    <!-- command to check stash  -->
+    git stash list
+
+    <!-- command to get back changes from stash -->
+    git stash apply; latest stash will restore but copy of the stash will presnt in history
+
+    <!-- get back any specfic stash -->
+    git stash apply stash@{0}
+
+    <!-- command to restore stash and clear the history  -->
+    git stash pop; latest stash will retore and history will be cleared git stash pop stash@{o} //for specfic stash
+
+    <!-- to clear or delete all stash -->
+    git stash clear
+
+</body>
+
+</html>
