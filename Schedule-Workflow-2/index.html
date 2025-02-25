@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule workflow</title>
+</head>
+
+<body>
+    <!-- Syntax of Yaml file for schedule workflow -->
+    <!-- - cron is time base jo scheduler usded for automation -->
+    <span>
+        name: schedule-worklfow 
+         on:
+           schedule:
+             - cron: "0 0 * * *"
+         jobs:
+            run-script:
+             runs-on: ubuntu-latest
+        steps:
+        - name: print msg
+          run: echo "Schedule workflow executed"      
+     </span>
+
+</body>
+
+</html>
