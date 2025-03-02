@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Concurrency</title>
+</head>
+
+<body>
+    <span>
+        job concurrency ensure to make the build of latest commit
+
+        syntax of yml file for next js app 
+
+        on:
+         push:
+           branches: [main]
+
+        jobs:
+          build:
+            runs-on : ubuntu-latest 
+            
+            concurrency:
+             group: deploy
+             cancel-in-progress: true
+
+        steps:
+        -name: checkout repo
+          uses: in this [checkout] built-in action form marketplace
+
+          -name: install dependencies 
+            run: npm install 
+            -name: build nextjs app 
+              run: npm run build 
+               -name: deploy 
+                 run: echo "Deploying app"
+                
+                
+
+    </span>
+    <script src="script.js"></script>
+</body>
+
+</html>
