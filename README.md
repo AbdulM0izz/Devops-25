@@ -23,7 +23,7 @@ I have successfully completed all key concepts of version control with Git and c
 ## 🔄 Ongoing Learning: Docker
 I am currently adding all my DevOps-related code and content to my GitLab group named **DevOps**. All Docker-related concepts and projects will be added under the project named **Docker**.
 
-🔗 **GitLab Group:** [DevOps](https://gitlab.com/devops)
+🔗 **GitLab Group:** [DevOps](https://gitlab.com/devops-journey25)
 
 ### Docker
 - Container basics and Docker architecture
